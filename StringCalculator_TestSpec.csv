@@ -1,0 +1,10 @@
+﻿TC ,Test case Name,Description,Input,Expected Output
+1,ExpectZeroForEmptyInput,If there is no input then the output is 0,(No input),0
+2,ExpectZeroForCharacters,"If the input is characters, then the returned sum is 0.",gokul,0
+3,ExpectSumForTwoNumbers," If the given input string is a list of numbers separated by commas, the numbers are added up","1,2,3",6
+4, ExpectSumWithNewlineDelimite,"If the given input string is a list of numbers separated by new line characters, the numbers are added up",1\n1\n2,4
+5,IgnoreNumbersGreaterThan1000,If the given input consists of numbers greater than thousand then the number greater than 1000 should be ignored,"1, 1001",1
+6, ExpectSumWithCustomDelimiter,If the given input consists of delimiters the numbers are added up,//;\n1;2,3
+7,ExpectExceptionforNegativeNumber ,If the give inout is negative number then a warning should be given.,-7,Negative not allowed
+8,ExpectZeroForSingleZero,If there is0 then the output is 0,0,0
+9,ExpectSumOfNumbersEqualto1000,if the given input is equal to 1000 then the sum must be calculated.,"999, 1000",1999

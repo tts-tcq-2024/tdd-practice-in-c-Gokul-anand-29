@@ -3,7 +3,14 @@
 
 TEST(StringCalculatorAddTests, ExpectZeroForEmptyInput) {
     int expectedresult = 0;
-    const char* input = "Hello, world!";
+    const char* input = " ";
+    int result = add(input);
+    ASSERT_EQ(result, expectedresult);
+}
+
+TEST(StringCalculatorAddTests, ExpectZeroForCharacters) {
+    int expectedresult = 0;
+    const char* input = "Hi";
     int result = add(input);
     ASSERT_EQ(result, expectedresult);
 }
@@ -42,3 +49,16 @@ TEST(StringCalculatorAddTests, ExpectSumWithCustomDelimiter) {
     int result = add(input);
     ASSERT_EQ(result, expectedresult);
 }
+
+TEST(StringCalculatorAddTests, ExpectExeptionForNegativeNumbers) {
+    const char*  input = "-1,-4";
+    int result = add(input);
+}
+
+TEST(StringCalculatorAddTests, ExpectSumOfNumbersEqualto1000) {
+    int expectedresult = 1999;
+    const char*  input = "999,1000";
+    int result = add(input);
+    ASSERT_EQ(result, expectedresult);
+}
+
