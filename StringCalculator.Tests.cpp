@@ -48,7 +48,7 @@ TEST(StringCalculatorAddTests, ExpectSumWithCustomDelimiter) {
     const char*  input = "//;\n1;2";
     int result = add(input);
     ASSERT_EQ(result, expectedresult);
-}.
+}
 
 TEST(StringCalculatorAddTests, ExpectExeptionForNegativeNumbers) {
     const char*  input = "-1,-4";
