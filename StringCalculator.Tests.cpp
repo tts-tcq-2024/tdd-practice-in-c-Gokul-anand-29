@@ -49,3 +49,10 @@ TEST(StringCalculatorAddTests, ExpectSumWithCustomDelimiter) {
     int result = add(input);
     ASSERT_EQ(result, expectedresult);
 }
+
+TEST(StringCalculatorAddTests, ExpectExceptionforNegativeNumber) {
+    int expectedresult = 3;
+    const char*  input = "//;\n1;2";
+    int result = add(input);
+    ASSERT_EQ(result, expectedresult);
+}
