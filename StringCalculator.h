@@ -31,7 +31,6 @@ static int sumNumbers(const char* input, const char* delimiters, char* negatives
     if (strlen(negatives) > 0) {
         negatives[strlen(negatives) - 1] = '\0';
         printf("Exception: negatives not allowed: %s\n", negatives);
-        exit(EXIT_FAILURE); 
     }
     return sum;
 }
