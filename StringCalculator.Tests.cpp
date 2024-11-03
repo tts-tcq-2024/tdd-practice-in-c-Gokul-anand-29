@@ -48,6 +48,11 @@ TEST(StringCalculatorAddTests, ExpectSumWithCustomDelimiter) {
     const char*  input = "//;\n1;2";
     int result = add(input);
     ASSERT_EQ(result, expectedresult);
+}.
+
+TEST(StringCalculatorAddTests, ExpectExeptionForNegativeNumbers) {
+    const char*  input = "-1,-4";
+    int result = add(input);
 }
 
 TEST(StringCalculatorAddTests, ExpectSumOfNumbersEqualto1000) {
@@ -56,3 +61,4 @@ TEST(StringCalculatorAddTests, ExpectSumOfNumbersEqualto1000) {
     int result = add(input);
     ASSERT_EQ(result, expectedresult);
 }
+
